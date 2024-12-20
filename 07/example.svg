@@ -1,0 +1,26 @@
+<svg width='800' height='600' xmlns='http://www.w3.org/2000/svg'>
+<line x1='0' y1='0' x2='800' y2='0' fill='#ffffffd9' stroke='#000000FF' stroke-width='1' />
+<line x1='0' y1='0' x2='0' y2='600' fill='#ffffffd9' stroke='#000000FF' stroke-width='1' />
+<line x1='800' y1='600' x2='0' y2='600' fill='#ffffffd9' stroke='#000000FF' stroke-width='1' />
+<line x1='800' y1='600' x2='800' y2='0' fill='#ffffffd9' stroke='#000000FF' stroke-width='1' />
+<polyline points='0,0 800,0 800,600 0,600' fill='#ffffffd9' stroke='none' />
+<line x1='0' y1='300' x2='800' y2='300' fill='#0080f0cc' stroke='#000000FF' stroke-width='1' />
+<line x1='0' y1='300' x2='0' y2='600' fill='#0080f0cc' stroke='#000000FF' stroke-width='1' />
+<line x1='800' y1='600' x2='0' y2='600' fill='#0080f0cc' stroke='#000000FF' stroke-width='1' />
+<line x1='800' y1='600' x2='800' y2='300' fill='#0080f0cc' stroke='#000000FF' stroke-width='1' />
+<polyline points='0,300 800,300 800,600 0,600' fill='#0080f0cc' stroke='none' />
+<ellipse cx='600' cy='100' rx='50' ry='50' fill='#b4506e80' stroke-opacity='0' />
+<ellipse cx='600' cy='100' rx='50' ry='50' fill-opacity='0' stroke='#b4506e' stroke-width='1' />
+<polyline points='800,280 800,300 500,300' fill='#2a0038' stroke='none' />
+<line x1='135' y1='234.28571428571428' x2='385' y2='234.28571428571428' fill='#dcc88c' stroke='#000000FF' stroke-width='1' />
+<line x1='135' y1='234.28571428571428' x2='135' y2='320' fill='#dcc88c' stroke='#000000FF' stroke-width='1' />
+<line x1='385' y1='320' x2='135' y2='320' fill='#dcc88c' stroke='#000000FF' stroke-width='1' />
+<line x1='385' y1='320' x2='385' y2='234.28571428571428' fill='#dcc88c' stroke='#000000FF' stroke-width='1' />
+<polyline points='135,234.28571428571428 385,234.28571428571428 385,320 135,320' fill='#dcc88c' stroke='none' />
+<line x1='210' y1='260' x2='310' y2='260' fill='#dcc88c' stroke='#000000FF' stroke-width='1' />
+<line x1='210' y1='260' x2='210' y2='294.2857142857143' fill='#dcc88c' stroke='#000000FF' stroke-width='1' />
+<line x1='310' y1='294.2857142857143' x2='210' y2='294.2857142857143' fill='#dcc88c' stroke='#000000FF' stroke-width='1' />
+<line x1='310' y1='294.2857142857143' x2='310' y2='260' fill='#dcc88c' stroke='#000000FF' stroke-width='1' />
+<polyline points='210,260 310,260 310,294.2857142857143 210,294.2857142857143' fill='#dcc88c' stroke='none' />
+<polyline points='60,234.28571428571428 460,234.28571428571428 260,200' fill='#1e008cb3' stroke='none' />
+</svg>
