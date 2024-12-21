@@ -12,6 +12,7 @@ export class RegularPolygon extends Shape {
     private n: number
 
     constructor(x: number, y: number, r: number, n: number, color?: Color) {
+        // @ts-ignore
         super(color)
         this.x = x
         this.y = y
@@ -40,7 +41,7 @@ export class RegularPolygon extends Shape {
         let x1 = this.x
         let y1 = this.y + this.r
 
-        for (let i = 0 i < this.n ++i) {
+        for (let i = 0; i < this.n; ++i) {
             const currAngle = (M_PI * 2 * i) / this.n
             const x2 = this.x + this.r * Math.sin(currAngle)
             const y2 = this.y + this.r * Math.cos(currAngle)
