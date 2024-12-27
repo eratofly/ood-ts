@@ -2,6 +2,7 @@ import {IDocument} from "./IDocument"
 import {Document} from "./Document"
 import {IHistory} from "./IHistory"
 import {ISaver} from "./ISaver"
+import process from 'node:process'
 
 export class Editor {
     private static trimString(str: string): void {
@@ -75,9 +76,10 @@ export class Editor {
     }
 
     private insertParagraph(args: string[]): void {
-        const [index, ...textArr] = args
-        const text = textArr.join(" ")
-        const optionalIndex = this.getOptionalIndex(index)
+        const text = args.length > 1
+            ? args.slice(0, -1).join(' ')
+            : args[0] || ''
+        const optionalIndex = this.getOptionalIndex(args[args.length - 1])
         this.document.insertParagraph(text.trim(), optionalIndex)
     }
 
@@ -176,6 +178,7 @@ export class Editor {
     private exit(): void {
         this.running = false
         this.output.write("Exiting editor...\n")
+        process.exit()
     }
 
     private getOptionalIndex(value: string): number | undefined {

@@ -48,7 +48,8 @@ export class Document implements IDocument {
     }
 
     public setTitle(title: string): void {
-        const command = new ChangeDocumentTitleCommand(this.title, title)
+        const changeTitle = (v: string) => {this.title = v}
+        const command = new ChangeDocumentTitleCommand(this.title, changeTitle, title)
         this.history.addAndExecuteCommand(command)
     }
 
