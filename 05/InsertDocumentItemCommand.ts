@@ -6,14 +6,14 @@ export class InsertDocumentItemCommand extends AbstractCommand {
     private newItem: DocumentItem
     private index: number | null
 
-    constructor(items: DocumentItem[], newItem: DocumentItem, index?: number | null) {
+    constructor(items: DocumentItem[], newItem: DocumentItem, index: number | null = null) {
         super()
-        if (index !== undefined && index !== null && index > items.length) {
+        if (index !== null && index > items.length) {
             throw new Error("invalid index")
         }
         this.items = items
         this.newItem = newItem
-        this.index = index !== undefined ? index : null
+        this.index = index
     }
 
     protected doExecute(): void {

@@ -3,6 +3,7 @@ import {Document} from "./Document"
 import {IHistory} from "./IHistory"
 import {ISaver} from "./ISaver"
 import process from 'node:process'
+import * as readline from 'node:readline'
 
 export class Editor {
     private static trimString(str: string): void {
@@ -22,7 +23,7 @@ export class Editor {
     }
 
     public start(): void {
-        const rl = require("readline").createInterface({
+        const rl = readline.createInterface({
             input: this.input,
             output: this.output
         })
@@ -77,9 +78,9 @@ export class Editor {
 
     private insertParagraph(args: string[]): void {
         const text = args.length > 1
-            ? args.slice(0, -1).join(' ')
+            ? args.slice(1).join(' ')
             : args[0] || ''
-        const optionalIndex = this.getOptionalIndex(args[args.length - 1])
+        const optionalIndex = this.getOptionalIndex(args[0])
         this.document.insertParagraph(text.trim(), optionalIndex)
     }
 

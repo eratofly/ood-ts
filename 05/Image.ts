@@ -1,5 +1,6 @@
 import {ICommandExecutor} from "./ICommandExecutor"
 import {IImage} from "./IImage"
+import * as fs from 'node:fs'
 
 export class Image implements IImage{
     private static readonly MIN_WIDTH = 1
@@ -90,8 +91,7 @@ export class Image implements IImage{
     }
 
     private static getTempDirectory(): string {
-        return "/tmp" // Replace with actual temp directory logic
-        //????????????
+        return "./tmp"
     }
 
     private static getFileExtension(path: string): string {
@@ -99,11 +99,11 @@ export class Image implements IImage{
     }
 
     private static fileExists(path: string): boolean {
-        return true
+        return fs.existsSync(path)
     }
 
     private static copyFile(src: string, dest: string): void {
-        console.log(`Copying file from ${src} to ${dest}`)
+        fs.copyFileSync(src, dest)
     }
 
     getType(): "image" {
