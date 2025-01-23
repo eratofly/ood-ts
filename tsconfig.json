@@ -1,13 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "es6",
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true,
-    "outDir": "dist",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext"
-  },
-  "include": ["06"],
+    "allowSyntheticDefaultImports": true,
+    "target": "es6",
+    "allowJs": true,
+    "moduleResolution": "node"
+  }
 }

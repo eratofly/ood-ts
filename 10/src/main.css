@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: 1px solid black;
+}
+
+.editor {
+    width: 100vw;
+    height: calc(100vh - 1px);
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.canvas {
+    border: 1px solid black;
+    align-self: center;
+    justify-self: center;
+    overflow: hidden;
+}
+
+.toolbar {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: burlywood;
+    transition: all .12s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle-button {
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='31' height='31' stroke='black'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.triangle-button {
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='39' height='33' viewBox='0 0 39 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.74648 31.75L19.5 0.999999L37.2535 31.75H1.74648Z' stroke='black'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ellipse-button {
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='16' cy='16' r='15.5' stroke='black'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button:hover {
+    background-color: #aa8c65;
+}
